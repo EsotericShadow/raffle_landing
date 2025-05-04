@@ -1,0 +1,402 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #1a1a2e;
+  font-family: Arial, sans-serif;
+}
+
+#scroll-container {
+  height: 12000px; /* Extended height for slow pacing */
+  position: relative;
+}
+
+.scene {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background Elements */
+.night-sky, .day-sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200vw;
+  height: 100vh;
+  background-size: cover;
+  z-index: 0;
+}
+
+.night-sky {
+  background: url('/assets/night_sky.png') repeat-x;
+}
+
+.day-sky {
+  background: url('/assets/day_sky.png') repeat-x;
+  opacity: 0;
+}
+
+.road {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200vw;
+  height: 20vh;
+  background: url('/assets/floor.png') repeat-x;
+  background-size: contain;
+  z-index: 1;
+}
+
+/* Stars for twinkling effect */
+.star {
+  position: absolute;
+  width: 3px; /* Smaller for mobile */
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.star1 { top: 10vh; left: 20vw; }
+.star2 { top: 15vh; left: 50vw; }
+.star3 { top: 5vh; left: 70vw; }
+
+/* Celestial Elements */
+.moon {
+  position: absolute;
+  top: 5vh;
+  left: 95vw;
+  width: 60px; /* Adjusted for mobile */
+  height: 60px;
+  z-index: 1;
+}
+
+.sun {
+  position: absolute;
+  top: 5vh;
+  left: 95vw;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  opacity: 0;
+}
+
+/* Clouds */
+.cloud {
+  position: absolute;
+  width: 120px; /* Adjusted for mobile */
+  height: 60px;
+  z-index: 1;
+}
+
+.cloud1 { top: 15vh; left: 10vw; }
+.cloud2 { top: 20vh; left: 40vw; }
+
+/* Characters and Objects */
+.degen {
+  position: absolute;
+  bottom: 20vh;
+  left: -40vw;
+  width: 80px; /* Adjusted for mobile */
+  height: 128px;
+  z-index: 2;
+}
+
+.degen-transformed {
+  position: absolute;
+  bottom: 20vh;
+  left: 45vw;
+  width: 80px;
+  height: 128px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.castle {
+  position: absolute;
+  bottom: 20vh;
+  left: 140vw;
+  width: 160px; /* Adjusted for mobile */
+  height: 192px;
+  z-index: 2;
+}
+
+.wizard {
+  position: absolute;
+  bottom: 20vh;
+  left: 140vw;
+  width: 80px; /* Adjusted for mobile */
+  height: 128px;
+  z-index: 3;
+}
+
+.level-up {
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px; /* Adjusted for mobile */
+  height: 150px;
+  z-index: 5;
+  opacity: 0;
+}
+
+.poof {
+  position: absolute;
+  bottom: 20vh;
+  left: 45vw;
+  width: 100px; /* Adjusted for mobile */
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  z-index: 4;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.treasure-chest {
+  position: absolute;
+  bottom: 20vh;
+  left: 50vw;
+  width: 80px; /* Adjusted for mobile */
+  height: 53px;
+  z-index: 3;
+  opacity: 0;
+}
+
+.sports-car {
+  position: absolute;
+  bottom: 10vh;
+  left: -40vw;
+  width: 300px; /* Adjusted for mobile */
+  height: 150px;
+  z-index: 3;
+}
+
+.occupied-sports-car {
+  position: absolute;
+  bottom: 10vh;
+  left: 40vw;
+  width: 300px;
+  height: 150px;
+  z-index: 3;
+  opacity: 0;
+}
+
+/* Image Styling */
+img {
+  image-rendering: pixelated;
+  width: 100%;
+  height: auto;
+}
+
+/* Lead Form */
+#lead-form {
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+#lead-form form {
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+#lead-form h2 {
+  font-size: 1.5rem;
+}
+
+#lead-form input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#lead-form button {
+  padding: 8px 16px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+#lead-form button:hover {
+  background: #45a049;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #scroll-container {
+    height: 14000px; /* Increased for slower scroll on mobile */
+  }
+
+  .night-sky, .day-sky {
+    width: 300vw; /* Wider for smoother parallax */
+  }
+
+  .road {
+    width: 300vw;
+    height: 15vh;
+  }
+
+  .moon, .sun {
+    width: 50px;
+    height: 50px;
+    top: 8vh;
+  }
+
+  .cloud {
+    width: 100px;
+    height: 50px;
+  }
+
+  .degen, .degen-transformed {
+    width: 60px;
+    height: 96px;
+    bottom: 15vh;
+  }
+
+  .castle {
+    width: 120px;
+    height: 144px;
+    bottom: 15vh;
+  }
+
+  .wizard {
+    width: 60px;
+    height: 96px;
+    bottom: 15vh;
+  }
+
+  .level-up {
+    width: 120px;
+    height: 120px;
+    top: 35vh;
+  }
+
+  .poof {
+    width: 80px;
+    height: 80px;
+    bottom: 15vh;
+  }
+
+  .treasure-chest {
+    width: 60px;
+    height: 40px;
+    bottom: 15vh;
+  }
+
+  .sports-car, .occupied-sports-car {
+    width: 200px;
+    height: 100px;
+    bottom: 10vh;
+  }
+
+  #lead-form h2 {
+    font-size: 1.2rem;
+  }
+
+  #lead-form input {
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+
+  #lead-form button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .star {
+    width: 2px;
+    height: 2px;
+  }
+
+  .moon, .sun {
+    width: 40px;
+    height: 40px;
+    top: 10vh;
+  }
+
+  .cloud {
+    width: 80px;
+    height: 40px;
+  }
+
+  .degen, .degen-transformed {
+    width: 50px;
+    height: 80px;
+    bottom: 12vh;
+  }
+
+  .castle {
+    width: 100px;
+    height: 120px;
+    bottom: 12vh;
+  }
+
+  .wizard {
+    width: 50px;
+    height: 80px;
+    bottom: 12vh;
+  }
+
+  .level-up {
+    width: 100px;
+    height: 100px;
+    top: 40vh;
+  }
+
+  .poof {
+    width: 60px;
+    height: 60px;
+    bottom: 12vh;
+  }
+
+  .treasure-chest {
+    width: 50px;
+    height: 33px;
+    bottom: 12vh;
+  }
+
+  .sports-car, .occupied-sports-car {
+    width: 150px;
+    height: 75px;
+    bottom: 8vh;
+  }
+
+  #lead-form form {
+    width: 95%;
+  }
+
+  #lead-form h2 {
+    font-size: 1rem;
+  }
+
+  #lead-form input {
+    max-width: 250px;
+    font-size: 0.8rem;
+  }
+
+  #lead-form button {
+    font-size: 0.8rem;
+  }
+}

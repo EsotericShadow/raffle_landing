@@ -1,0 +1,13 @@
+{
+  "name": "raffle-landing-page",
+  "version": "1.0.0",
+  "description": "A modular raffle landing page with scroll-based animations",
+  "main": "index.html",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["raffle", "landing-page", "gsap", "scrolltrigger"],
+  "author": "",
+  "license": "ISC"
+}
