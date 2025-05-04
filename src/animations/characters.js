@@ -8,6 +8,8 @@ export function initCharacterAnimations() {
   const wizard = document.querySelector('.wizard');
   const wizardWidth = wizard.offsetWidth;
   const castle = document.querySelector('.castle');
+  const sportsCar = document.querySelector('.sports-car');
+  const sportsCarWidth = sportsCar.offsetWidth;
 
   // Calculate final left positions in pixels to center degen at 45vw and wizard at 55vw
   const degenFinalLeft = (45 / 100 * viewportWidth) - (degenWidth / 2);
@@ -47,8 +49,8 @@ export function initCharacterAnimations() {
     }
   );
 
-  // Wizard moves from 140vw to final position, starting 300px after castle for slight delay
-  const wizardStartScroll = degenAt25vwScroll + 300; // Reduced delay from original to make wizard appear sooner
+  // Wizard moves from 140vw to final position, starting 300px after castle
+  const wizardStartScroll = degenAt25vwScroll + 300;
   gsap.fromTo(".wizard", 
     { left: 1.4 * viewportWidth }, // 140vw
     { 
@@ -76,6 +78,25 @@ export function initCharacterAnimations() {
         start: 0,
         end: totalScroll,
         scrub: true
+      }
+    }
+  );
+
+  // Sports Car Movement: Adjusted to start at 9500px and end at 9900px
+  const sportsCarStartScroll = 9500;
+  const sportsCarEndScroll = 9900;
+  const sportsCarFinalLeft = 40 / 100 * viewportWidth; // Left edge at 40vw
+
+  gsap.fromTo(".sports-car", 
+    { left: -0.4 * viewportWidth }, // Start off-screen left at -40vw
+    { 
+      left: sportsCarFinalLeft,
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#scroll-container",
+        start: sportsCarStartScroll,
+        end: sportsCarEndScroll,
+        scrub: 5
       }
     }
   );
