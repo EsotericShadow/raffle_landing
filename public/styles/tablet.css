@@ -108,7 +108,7 @@ body {
 
 .degen-transformed {
   position: absolute;
-  bottom: 45vh; /* 3x original 15vh */
+  bottom: 8vh; /* 3x original 15vh */
   left: 135vw; /* 3x original 45vw */
   width: 180px; /* 3x original 60px */
   height: 288px; /* 3x original 96px */
@@ -118,7 +118,7 @@ body {
 
 .castle {
   position: absolute;
-  bottom: 45vh; /* 3x original 15vh */
+  bottom: 8vh; /* 3x original 15vh */
   left: 420vw; /* 3x original 140vw */
   width: 360px; /* 3x original 120px */
   height: 432px; /* 3x original 144px */
@@ -127,7 +127,7 @@ body {
 
 .wizard {
   position: absolute;
-  bottom: 45vh; /* 3x original 15vh */
+  bottom: 8vh; /* 3x original 15vh */
   left: 420vw; /* 3x original 140vw */
   width: 180px; /* 3x original  Hawkins */
   height: 288px; /* 3x original 96px */
@@ -136,7 +136,7 @@ body {
 
 .level-up {
   position: absolute;
-  top: 105vh; /* 3x original 35vh */
+  top: 36vh; /* 3x original 35vh */
   left: 50%;
   transform: translateX(-50%);
   width: 360px; /* 3x original 120px */
@@ -147,7 +147,7 @@ body {
 
 .poof {
   position: absolute;
-  bottom: 45vh; /* 3x original 15vh */
+  bottom: 8vh; /* 3x original 15vh */
   left: 135vw; /* 3x original 45vw */
   width: 240px; /* 3x original 80px */
   height: 240px; /* 3x original 80px */
@@ -160,7 +160,7 @@ body {
 
 .treasure-chest {
   position: absolute;
-  bottom: 45vh; /* 3x original 15vh */
+  bottom: 8vh; /* 3x original 15vh */
   left: 150vw; /* 3x original 50vw */
   width: 180px; /* 3x original 60px */
   height: 120px; /* 3x original 40px */
@@ -170,7 +170,7 @@ body {
 
 .sports-car {
   position: absolute;
-  bottom: 30vh; /* 3x original 10vh */
+  bottom: 4vh; /* 3x original 10vh */
   left: -120vw; /* 3x original -40vw */
   width: 600px; /* 3x original 200px */
   height: 300px; /* 3x original 100px */
@@ -179,8 +179,8 @@ body {
 
 .occupied-sports-car {
   position: absolute;
-  bottom: 30vh; /* 3x original 10vh */
-  left: 120vw; /* 3x original 40vw */
+  bottom: 4vh; /* 3x original 10vh */
+  left: -120vw; /* 3x original 40vw */
   width: 600px; /* 3x original 200px */
   height: 300px; /* 3x original 100px */
   z-index: 3;
