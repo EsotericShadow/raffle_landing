@@ -1,7 +1,7 @@
 export function initLeadFormAnimation() {
-  // Transition to lead form (11600 to 12000px)
+  // Transition to lead form by fading out scene
   gsap.to(".scene", {
-    top: "-100vh",
+    opacity: 0,
     ease: "none",
     scrollTrigger: {
       trigger: "#scroll-container",
