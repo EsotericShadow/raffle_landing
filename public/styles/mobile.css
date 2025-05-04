@@ -93,13 +93,13 @@ body {
   z-index: 1;
 }
 
-.cloud1 { top: 15vh; left: 10vw; }
-.cloud2 { top: 20vh; left: 40vw; }
+.cloud1 { top: 33vh; left: 10vw; }
+.cloud2 { top: 40vh; left: 40vw; }
 
 /* Characters and Objects */
 .degen {
   position: absolute;
-  bottom: 36vh; /* 3x original 12vh */
+  bottom: 12vh; /* 3x original 12vh */
   left: -120vw; /* 3x original -40vw */
   width: 150px; /* 3x original 50px */
   height: 240px; /* 3x original 80px */
@@ -108,7 +108,7 @@ body {
 
 .degen-transformed {
   position: absolute;
-  bottom: 36vh; /* 3x original 12vh */
+  bottom: 12vh; /* 3x original 12vh */
   left: 135vw; /* 3x original 45vw */
   width: 150px; /* 3x original 50px */
   height: 240px; /* 3x original 80px */
@@ -118,7 +118,7 @@ body {
 
 .castle {
   position: absolute;
-  bottom: 36vh; /* 3x original 12vh */
+  bottom: 12vh; /* 3x original 12vh */
   left: 420vw; /* 3x original 140vw */
   width: 300px; /* 3x original 100px */
   height: 360px; /* 3x original 120px */
@@ -127,7 +127,7 @@ body {
 
 .wizard {
   position: absolute;
-  bottom: 36vh; /* 3x original 12vh */
+  bottom: 12vh; /* 3x original 12vh */
   left: 420vw; /* 3x original 140vw */
   width: 150px; /* 3x original 50px */
   height: 240px; /* 3x original 80px */
@@ -147,7 +147,7 @@ body {
 
 .poof {
   position: absolute;
-  bottom: 36vh; /* 3x original 12vh */
+  bottom: 12vh; /* 3x original 12vh */
   left: 135vw; /* 3x original 45vw */
   width: 180px; /* 3x original 60px */
   height: 180px; /* 3x original 60px */
@@ -170,7 +170,7 @@ body {
 
 .sports-car {
   position: absolute;
-  bottom: 24vh; /* 3x original 8vh */
+  bottom: 12vh; /* 3x original 8vh */
   left: -120vw; /* 3x original -40vw */
   width: 450px; /* 3x original 150px */
   height: 225px; /* 3x original 75px */
@@ -179,7 +179,7 @@ body {
 
 .occupied-sports-car {
   position: absolute;
-  bottom: 24vh; /* 3x original 8vh */
+  bottom: 12vh; /* 3x original 8vh */
   left: 120vw; /* 3x original 40vw */
   width: 450px; /* 3x original 150px */
   height: 225px; /* 3x original 75px */
