@@ -22,27 +22,39 @@ export function initBackgroundAnimations() {
     ease: "power1.inOut" 
   });
 
-  // Clouds move with scroll, matching degen's range
-  gsap.to(".cloud1", { 
-    left: "-200vw",
+  // Continuous cloud movement
+  const cloud1Timeline = gsap.to(".cloud1", { 
+    x: "-200vw",
+    duration: 60, 
+    repeat: -1, 
+    ease: "linear" 
+  });
+  const cloud2Timeline = gsap.to(".cloud2", { 
+    x: "-200vw",
+    duration: 70, 
+    repeat: -1, 
+    ease: "linear" 
+  });
+
+  // Speed up clouds during scroll to match degen
+  gsap.to(cloud1Timeline, {
+    timeScale: 4, // 4x speed to approximate degen's 165vw over 8000px
     ease: "none",
-    repeat: -1,
     scrollTrigger: {
       trigger: "#scroll-container",
       start: 0,
       end: 8000,
-      scrub: 3
+      scrub: 1
     }
   });
-  gsap.to(".cloud2", { 
-    left: "-200vw",
+  gsap.to(cloud2Timeline, {
+    timeScale: 4,
     ease: "none",
-    repeat: -1,
     scrollTrigger: {
       trigger: "#scroll-container",
       start: 0,
       end: 8000,
-      scrub: 3
+      scrub: 1
     }
   });
 
