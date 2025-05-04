@@ -66,7 +66,10 @@ export function initTransformationAnimations() {
   });
 
   carTransformTimeline
-    .to(".degen-transformed", { opacity: 0, duration: 0.01 })
+    .to(".castle", { opacity: 0, duration: 0.01 })
+    .to(".treasure-chest", { opacity: 0, duration: 0.01 }, "<")
+    .to(".wizard", { opacity: 0, duration: 0.01 }, "<")
+    .to(".degen-transformed", { opacity: 0, duration: 0.01 }, "<")
     .to(".sports-car", { opacity: 0, duration: 0.01 }, "<")
     .to(".occupied-sports-car", { opacity: 1, duration: 0.01 }, "<");
 
