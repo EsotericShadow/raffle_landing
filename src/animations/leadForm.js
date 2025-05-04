@@ -7,7 +7,7 @@ export function initLeadFormAnimation() {
       trigger: "#scroll-container",
       start: 11600,
       end: 12000,
-      scrub: 1
+      scrub: 5
     }
   });
 }
