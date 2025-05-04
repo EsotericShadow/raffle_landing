@@ -7,7 +7,7 @@ export function initCharacterAnimations() {
       trigger: "#scroll-container",
       start: 0,
       end: 8000,
-      scrub: 3
+      scrub: 5
     }
   });
 
@@ -18,7 +18,7 @@ export function initCharacterAnimations() {
       trigger: "#scroll-container",
       start: 0,
       end: 8000,
-      scrub: 3
+      scrub: 5
     }
   });
 
@@ -29,7 +29,7 @@ export function initCharacterAnimations() {
       trigger: "#scroll-container",
       start: 0,
       end: 8000,
-      scrub: 3
+      scrub: 5
     }
   });
 
@@ -40,7 +40,7 @@ export function initCharacterAnimations() {
       trigger: "#scroll-container",
       start: 0,
       end: 8000,
-      scrub: 3
+      scrub: 5
     }
   });
 
@@ -52,7 +52,7 @@ export function initCharacterAnimations() {
       trigger: "#scroll-container",
       start: 9900,
       end: 11500,
-      scrub: 3
+      scrub: 5
     }
   });
 
@@ -63,7 +63,7 @@ export function initCharacterAnimations() {
       trigger: "#scroll-container",
       start: 9900,
       end: 11500,
-      scrub: 3
+      scrub: 5
     }
   });
 }
