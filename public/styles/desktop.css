@@ -146,12 +146,12 @@ body {
 
 .sports-car {
   position: absolute;
-  bottom: 10vh;
+  bottom: 15vh; /* Increased from 10vh to move car down */
   left: -40vw;
   width: 900px;
   height: 450px;
   z-index: 3;
-}
+
 
 .occupied-sports-car {
   position: absolute;
