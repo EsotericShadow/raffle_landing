@@ -6,7 +6,7 @@ export function initTransformationAnimations() {
       trigger: "#scroll-container",
       start: 8200,
       end: 8300,
-      scrub: 1
+      scrub: 5
     }
   });
 
@@ -16,7 +16,7 @@ export function initTransformationAnimations() {
       trigger: "#scroll-container",
       start: 8400,
       end: 8500,
-      scrub: 1
+      scrub: 5
     }
   });
 
@@ -26,7 +26,7 @@ export function initTransformationAnimations() {
       trigger: "#scroll-container",
       start: 8600,
       end: 9000,
-      scrub: 1
+      scrub: 5
     }
   });
 
@@ -37,7 +37,7 @@ export function initTransformationAnimations() {
     .to(".night-sky", { opacity: 0, duration: 1 }, "<")
     .to(".moon", { opacity: 0, duration: 1 }, "<")
     .to(".day-sky", { opacity: 1, duration: 1 }, "<")
-    .to(".sun", { left: "75vw", opacity: 1, duration: 1 }, "<")
+    .to(".sun", { opacity: 1, duration: 1 }, "<")
     .to(".poof", { opacity: 0, scale: 0, duration: 0.5 })
     .to(".treasure-chest", { opacity: 1, duration: 1 })
     .to(".degen-transformed", { left: "40vw", duration: 1 }, "-=0.5")
@@ -51,7 +51,7 @@ export function initTransformationAnimations() {
       trigger: "#scroll-container",
       start: 9100,
       end: 9500,
-      scrub: 3
+      scrub: 5
     }
   });
 
@@ -61,7 +61,7 @@ export function initTransformationAnimations() {
       trigger: "#scroll-container",
       start: 9600,
       end: 9800,
-      scrub: 1
+      scrub: 5
     }
   });
 
@@ -78,7 +78,7 @@ export function initTransformationAnimations() {
       trigger: "#scroll-container",
       start: 9900,
       end: 11500,
-      scrub: 3
+      scrub: 5
     }
   });
 }
