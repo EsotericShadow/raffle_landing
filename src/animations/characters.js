@@ -88,7 +88,7 @@ export function initCharacterAnimations() {
   const sportsCarFinalLeft = 40 / 100 * viewportWidth; // Left edge at 40vw
 
   gsap.fromTo(".sports-car", 
-    { left: -0.4 * viewportWidth }, // Start off-screen left at -40vw
+    { left: -0.7 * viewportWidth }, // Start off-screen left at -40vw
     { 
       left: sportsCarFinalLeft,
       ease: "none",
