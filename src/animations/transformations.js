@@ -66,9 +66,9 @@ export function initTransformationAnimations() {
   });
 
   carTransformTimeline
-    .to(".degen-transformed", { opacity: 0, duration: 1.5 })
-    .to(".sports-car", { opacity: 0, duration: 0.25 }, "<")
-    .to(".occupied-sports-car", { opacity: 1, duration: 0.25 }, "<");
+    .to(".degen-transformed", { opacity: 0, duration: 0.01 })
+    .to(".sports-car", { opacity: 0, duration: 0.01 }, "<")
+    .to(".occupied-sports-car", { opacity: 1, duration: 0.01 }, "<");
 
   // Drive past sequence for occupied sports car (9900 to 11500px)
   gsap.to(".occupied-sports-car", {
