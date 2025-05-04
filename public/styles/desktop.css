@@ -99,7 +99,7 @@ body {
 /* Characters and Objects */
 .degen {
   position: absolute;
-  bottom: 60vh; /* 3x original 20vh */
+  bottom: 16vh; /* 3x original 20vh */
   left: -120vw; /* 3x original -40vw */
   width: 240px; /* 3x original 80px */
   height: 384px; /* 3x original 128px */
@@ -108,7 +108,7 @@ body {
 
 .degen-transformed {
   position: absolute;
-  bottom: 60vh; /* 3x original 20vh */
+  bottom: 16vh; /* 3x original 20vh */
   left: 135vw; /* 3x original 45vw */
   width: 240px; /* 3x original 80px */
   height: 384px; /* 3x original 128px */
@@ -118,7 +118,7 @@ body {
 
 .castle {
   position: absolute;
-  bottom: 60vh; /* 3x original 20vh */
+  bottom: 16vh; /* 3x original 20vh */
   left: 420vw; /* 3x original 140vw */
   width: 480px; /* 3x original 160px */
   height: 576px; /* 3x original 192px */
@@ -127,7 +127,7 @@ body {
 
 .wizard {
   position: absolute;
-  bottom: 60vh; /* 3x original 20vh */
+  bottom: 16vh; /* 3x original 20vh */
   left: 420vw; /* 3x original 140vw */
   width: 240px; /* 3x original 80px */
   height: 384px; /* 3x original 128px */
@@ -136,7 +136,7 @@ body {
 
 .level-up {
   position: absolute;
-  top: 90vh; /* 3x original 30vh */
+  top: 8vh; /* 3x original 30vh */
   left: 50%;
   transform: translateX(-50%);
   width: 450px; /* 3x original 150px */
@@ -147,7 +147,7 @@ body {
 
 .poof {
   position: absolute;
-  bottom: 60vh; /* 3x original 20vh */
+  bottom: 16vh; /* 3x original 20vh */
   left: 135vw; /* 3x original 45vw */
   width: 300px; /* 3x original 100px */
   height: 300px; /* 3x original 100px */
@@ -160,7 +160,7 @@ body {
 
 .treasure-chest {
   position: absolute;
-  bottom: 60vh; /* 3x original 20vh */
+  bottom: 16vh; /* 3x original 20vh */
   left: 150vw; /* 3x original 50vw */
   width: 240px; /* 3x original 80px */
   height: 159px; /* 3x original 53px */
@@ -170,7 +170,7 @@ body {
 
 .sports-car {
   position: absolute;
-  bottom: 30vh; /* 3x original 10vh */
+  bottom: 8vh; /* 3x original 10vh */
   left: -120vw; /* 3x original -40vw */
   width: 900px; /* 3x original 300px */
   height: 450px; /* 3x original 150px */
@@ -179,8 +179,8 @@ body {
 
 .occupied-sports-car {
   position: absolute;
-  bottom: 30vh; /* 3x original 10vh */
-  left: 120vw; /* 3x original 40vw */
+  bottom: 8vh; /* 3x original 10vh */
+  left: -120vw; /* 3x original 40vw */
   width: 900px; /* 3x original 300px */
   height: 450px; /* 3x original 150px */
   z-index: 3;
