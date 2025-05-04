@@ -22,18 +22,28 @@ export function initBackgroundAnimations() {
     ease: "power1.inOut" 
   });
 
-  // Clouds autoscroll very slowly
+  // Clouds move with scroll, matching degen's range
   gsap.to(".cloud1", { 
-    x: "-200vw", 
-    duration: 240, 
-    repeat: -1, 
-    ease: "linear" 
+    left: "-200vw",
+    ease: "none",
+    repeat: -1,
+    scrollTrigger: {
+      trigger: "#scroll-container",
+      start: 0,
+      end: 8000,
+      scrub: 3
+    }
   });
   gsap.to(".cloud2", { 
-    x: "-200vw", 
-    duration: 280, 
-    repeat: -1, 
-    ease: "linear" 
+    left: "-200vw",
+    ease: "none",
+    repeat: -1,
+    scrollTrigger: {
+      trigger: "#scroll-container",
+      start: 0,
+      end: 8000,
+      scrub: 3
+    }
   });
 
   // Parallax background and floor movement
