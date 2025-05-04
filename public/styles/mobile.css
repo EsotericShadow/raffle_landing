@@ -7,7 +7,7 @@ body {
 }
 
 #scroll-container {
-  height: 14000px; /* Increased for slower scroll on mobile */
+  height: 14000px;
   position: relative;
 }
 
@@ -20,12 +20,11 @@ body {
   overflow: hidden;
 }
 
-/* Background Elements */
 .night-sky, .day-sky {
   position: absolute;
   top: 0;
   left: 0;
-  width: 300vw; /* Wider for smoother parallax */
+  width: 300vw;
   height: 100vh;
   background-size: cover;
   z-index: 0;
@@ -51,106 +50,83 @@ body {
   z-index: 1;
 }
 
-/* Stars for twinkling effect */
-.star {
+.moon, .sun {
   position: absolute;
-  width: 6px; /* 3x original 2px */
-  height: 6px; /* 3x original 2px */
-  background: white;
-  border-radius: 50%;
-  opacity: 1;
-}
-
-.star1 { top: 10vh; left: 20vw; }
-.star2 { top: 15vh; left: 50vw; }
-.star3 { top: 5vh; left: 70vw; }
-
-/* Celestial Elements */
-.moon {
-  position: absolute;
-  top: 30vh; /* 3x original 10vh */
-  left: 285vw; /* 3x original 95vw */
-  width: 120px; /* 3x original 40px */
-  height: 120px; /* 3x original 40px */
+  top: 30vh;
+  left: 95vw;
+  width: 120px;
+  height: 120px;
   z-index: 1;
 }
 
 .sun {
-  position: absolute;
-  top: 30vh; /* 3x original 10vh */
-  left: 285vw; /* 3x original 95vw */
-  width: 120px; /* 3x original 40px */
-  height: 120px; /* 3x original 40px */
-  z-index: 1;
   opacity: 0;
 }
 
-/* Clouds */
 .cloud {
   position: absolute;
-  width: 240px; /* 3x original 80px */
-  height: 120px; /* 3x original 40px */
+  width: 240px;
+  height: 120px;
   z-index: 1;
 }
 
 .cloud1 { top: 33vh; left: 10vw; }
 .cloud2 { top: 40vh; left: 40vw; }
 
-/* Characters and Objects */
 .degen {
   position: absolute;
-  bottom: 12vh; /* 3x original 12vh */
-  left: -120vw; /* 3x original -40vw */
-  width: 150px; /* 3x original 50px */
-  height: 240px; /* 3x original 80px */
+  bottom: 12vh;
+  left: -40vw;
+  width: 150px;
+  height: 240px;
   z-index: 2;
 }
 
 .degen-transformed {
   position: absolute;
-  bottom: 12vh; /* 3x original 12vh */
-  left: 135vw; /* 3x original 45vw */
-  width: 150px; /* 3x original 50px */
-  height: 240px; /* 3x original 80px */
+  bottom: 12vh;
+  left: 45vw;
+  width: 150px;
+  height: 240px;
   z-index: 2;
   opacity: 0;
 }
 
 .castle {
   position: absolute;
-  bottom: 12vh; /* 3x original 12vh */
-  left: 420vw; /* 3x original 140vw */
-  width: 300px; /* 3x original 100px */
-  height: 360px; /* 3x original 120px */
+  bottom: 12vh;
+  left: 140vw;
+  width: 300px;
+  height: 360px;
   z-index: 2;
 }
 
 .wizard {
   position: absolute;
-  bottom: 12vh; /* 3x original 12vh */
-  left: 420vw; /* 3x original 140vw */
-  width: 150px; /* 3x original 50px */
-  height: 240px; /* 3x original 80px */
+  bottom: 12vh;
+  left: 140vw;
+  width: 150px;
+  height: 240px;
   z-index: 3;
 }
 
 .level-up {
   position: absolute;
-  top: 120vh; /* 3x original 40vh */
+  top: 40vh;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px; /* 3x original 100px */
-  height: 300px; /* 3x original 100px */
+  width: 200px;
+  height: 200px;
   z-index: 5;
   opacity: 0;
 }
 
 .poof {
   position: absolute;
-  bottom: 12vh; /* 3x original 12vh */
-  left: 135vw; /* 3x original 45vw */
-  width: 180px; /* 3x original 60px */
-  height: 180px; /* 3x original 60px */
+  bottom: 12vh;
+  left: 45vw;
+  width: 180px;
+  height: 180px;
   background: white;
   border-radius: 50%;
   z-index: 4;
@@ -160,41 +136,39 @@ body {
 
 .treasure-chest {
   position: absolute;
-  bottom: 6vh; /* 3x original 12vh */
-  left: 150vw; /* 3x original 50vw */
-  width: 150px; /* 3x original 50px */
-  height: 99px; /* 3x original 33px */
+  bottom: 6vh;
+  left: 50vw;
+  width: 150px;
+  height: 99px;
   z-index: 3;
   opacity: 0;
 }
 
 .sports-car {
   position: absolute;
-  bottom: 4vh; /* 3x original 8vh */
-  left: -120vw; /* 3x original -40vw */
-  width: 450px; /* 3x original 150px */
-  height: 225px; /* 3x original 75px */
+  bottom: 4vh;
+  left: -40vw;
+  width: 450px;
+  height: 225px;
   z-index: 3;
 }
 
 .occupied-sports-car {
   position: absolute;
-  bottom: 4vh; /* 3x original 8vh */
-  left: -120vw; /* 3x original 40vw */
-  width: 450px; /* 3x original 150px */
-  height: 225px; /* 3x original 75px */
+  bottom: 4vh;
+  left: 40vw;
+  width: 450px;
+  height: 225px;
   z-index: 3;
   opacity: 0;
 }
 
-/* Image Styling */
 img {
   image-rendering: pixelated;
   width: 100%;
   height: auto;
 }
 
-/* Lead Form */
 #lead-form {
   height: 100vh;
   background: #fff;
