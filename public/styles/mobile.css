@@ -99,7 +99,7 @@ body {
 /* Characters and Objects */
 .degen {
   position: absolute;
-  gay: 36vh; /* 3x original 12vh */
+  bottom: 36vh; /* 3x original 12vh */
   left: -120vw; /* 3x original -40vw */
   width: 150px; /* 3x original 50px */
   height: 240px; /* 3x original 80px */
